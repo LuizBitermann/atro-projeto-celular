@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+    
+    <title>atro</title>
+
+</head>
+
+<body>
+
+    <div id="div-main">
+       
+        <h1 class="h1-main">atro</h1>
+        <input placeholder="Usuario/E-mail" />
+        <input id="input-password" placeholder="Senha" type="password" />
+        
+        <button id="button-sign">Sign in</button>
+        <button id="button-facebook">Continue with Facebook</button>
+
+        <div id="div-links">
+            <a>Forgot? Details</a>
+            <a>Create Account</a>
+        </div>
+    </div>
+    
+    
+
+</body>
+
+<style>
+    * {
+        /* Esses codicos, tiraram toda margem e o espacamento da tela.*/
+        margin: 0;
+        padding: 0;
+        outline: none;
+    }
+    
+
+    #div-main {
+        /* esse codico vh(view height) dispoe para ser usado toda tela(height=altura*/
+        height: 100vh;
+        /* mesma coisa do vh mas para altura(width=largura*/
+        width: 100vw;
+        /* aqui para colocar imagem no background usa o url*/
+        background: url(./img/image.png);
+        /* aqui e para cobrir tudo*/
+        background-size: cover;
+        /* sozinho o display nao ira fazer nada, mas com o div posso escolher em colunas,alinhar entre outras*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+   
+
+    .h1-main {
+        font-family: 'Fjalla One', sans-serif;
+        border-color: black;
+        color: white;
+        border-radius: 10px;
+        width: 55px;
+        padding-top: 110px;
+       
+    }
+   
+    input {
+        height: 50px;
+        width: 80%;
+        border-radius: 15px;
+        border: none;
+        background: #140F26;
+        /* codico que deixa transparente*/
+        opacity: 0.8;
+        margin-top: 100px;
+        color: white;
+        font-size: 17px;
+        padding-left: 10px;
+    }
+
+    #input-password {
+        margin-top: 20px;
+
+
+    }
+
+    #button-sign {
+        height: 50px;
+        border: none;
+        width: 80%;
+        background-color: #645AFF;
+        color: white;
+        border-radius: 30px;
+        margin-top: 20px;
+        /* codico que deixa gradiante as cores*/
+        background-image: linear-gradient(#645AFF 54%, #A573FF);
+
+    }
+/* codico que permie que o botao se meixa ou mude ao clicar*/
+    #button-sign:active{
+box-shadow: 0 3px black;
+transform: translateY(4px);
+
+
+    }
+
+    #button-facebook {
+        width: 80%;
+        height: 50px;
+        margin-top: 20px;
+        border-radius: 30px;
+        background-color: black;
+        opacity: 0.4;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 10px;
+    }
+
+    #button-facebook:active{
+background: white;
+color: black;
+
+    }
+
+#div-links{
+
+display: flex;
+/* codico que deixa um espaco dentre as frases, itens entre outros*/
+justify-content: space-between;
+/* codico que deixa em linha*/
+flex-direction: row;
+width: 90%;
+margin-top: 60px;
+color: white;
+font-size: 12px;
+}
+
+</style>
+
+
+
+</html>
